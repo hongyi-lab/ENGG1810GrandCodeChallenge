@@ -36,5 +36,28 @@ steps by steps instructions :
 7. train the Yolo8n model with the txt file
 8. call the model and testing the result
 9. if the result is not that good, we need to get more data and train it again.
-    
+
+
+
+If you feel it is difficult for doing above, so could you please just plot the graph from excel and then I can lable it and do the rest ? Besides this, we can coupld the above complex method with the Fortier transform method. You can write code and do this method. And Please come up with ideas about the presentation and the poster ! And the presentation might need everyone to engage.
+
+
+There is a simple glance about the Fortier Transform method: ( just like an extension version of the project one, if you fininshed the project one, you can do it !)
+
+
+The Fourier Transform is a mathematical tool that transforms a signal from the time domain (how a signal changes over time) into the frequency domain (how much different frequencies exist in the signal). It shows us which frequencies are present and how strong they are.
+
+In the case of EEG signals:
+Normal brain activity shows a balanced spread across frequencies.
+Seizure activity often shows a sudden increase in low-frequency energy (for example, 0–10 Hz).
+By applying the Fourier Transform to EEG data, we can:
+
+1. Identify changes in frequency energy.
+
+2. Detect seizures by checking if low-frequency energy rises above a chosen threshold.
+
+This method is simple, explainable to medical professionals, and effective for detecting seizures in real-world data.
+We use Python's numpy library (np.fft.fft) to perform the Fourier Transform and calculate energy in specific frequency bands. (You even do not need to know what is Fortier Transform, and what is the main principle of that, the only thing you need to do is applying the numpy !!! )  ( you can search online, ask chatgpt, about how to use it )
+
+
 
